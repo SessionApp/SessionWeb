@@ -15,9 +15,6 @@ module.exports = configure(function (ctx) {
   return {
     // https://v2.quasar.dev/quasar-cli-webpack/supporting-ts
     supportTS: false,
-    //for github pages
-    outputDir: 'docs',
-
     // https://v2.quasar.dev/quasar-cli-webpack/prefetch-feature
     // preFetch: true,
 
@@ -53,6 +50,8 @@ module.exports = configure(function (ctx) {
       vueRouterMode: 'hash', // available values: 'hash', 'history'
 
       env: require('dotenv').config({ path: `./.env.${process.env.NODE_ENV}` }).parsed,
+
+      distDir: './docs',
       // transpile: false,
       // publicPath: '/',
 
