@@ -14,6 +14,11 @@ export default {
     new_password : "Nouveau mot de passe",
     password_changed:"Ton mot de passe a été changé avec succès ! Tu peux désormais te reconnecter."
   },
+  email:{
+    unsubscribing: 'Désabonnement...',
+    unsubscribe: 'Se désabonner',
+    do_you_want_unsubscribe: 'Voulez-vous vraiment vous désabonner de nos emails ?'
+  },
   others: {
     send:"Envoyer",
     error_happened: "Une erreur est survenue"

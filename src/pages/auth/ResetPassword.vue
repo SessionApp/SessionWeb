@@ -58,6 +58,7 @@ export default defineComponent({
       useAuthStore()
         .resetPassword({
           token: this.$route.query.token,
+          userId: this.$route.query.userId,
           password: this.newPassword,
         })
         .then(() => {

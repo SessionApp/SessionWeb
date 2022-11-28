@@ -5,6 +5,10 @@ const routes = [
     component: () => import('pages/auth/ResetPassword.vue')
   },
   {
+    path: '/unsubscribe-newsletter',
+    component: () => import('src/pages/user/NewsletterUnsubscribe.vue')
+  },
+  {
     path: '/',
     component: () => import('layouts/MainLayout.vue'),
     children: [

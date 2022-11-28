@@ -1,16 +1,16 @@
 import { defineStore } from 'pinia';
 import {api} from "boot/axios"
 
-export const useAuthStore = defineStore('auth', {
+export const useUserStore = defineStore('user', {
   state: () => ({
   }),
   getters: {
   },
   actions: {
-    resetPassword(payload) {
+    unsubscribeNewsletter(payload) {
       return new Promise((resolve, reject) => {
         return api
-          .post("/reset_password", payload)
+          .post("/unsubscribe_newsletter", payload)
           .then(({ data }) => {
             resolve(data);
           })
